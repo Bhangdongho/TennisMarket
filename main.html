@@ -3,7 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <title>Main</title>
-    <link rel="stylesheet" href="main.css" />
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .welcome {
+        font-size: 20px;
+      }
+
+      body .card {
+        margin-top: 40px;
+        margin-right: 150px;
+        display: inline-block;
+      }
+
+      .card_img {
+        width: 300px;
+        height: 300px;
+      }
+
+      .card_title {
+        font-size: 30px;
+      }
+
+      .card_button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 15px 15px;
+        font-size: 20px;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <h1>Tennis market</h1>
@@ -21,7 +54,7 @@
         class="card_button"
         type="button"
         value="order"
-        onclick="alert(1);"
+        onclick="location.href = '/order?productId=1'"
       />
     </div>
     <div class="card">
